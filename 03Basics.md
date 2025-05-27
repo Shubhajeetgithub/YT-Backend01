@@ -4,6 +4,7 @@ npm init
 ```
 ```bash
 git init
+git branch -M main
 ```
 Now create a .gitignore file and add this content
 ```
@@ -146,3 +147,11 @@ Inside package.json, before "main" add this line
 and inside "scripts" add this line
 
 "dev": "nodemon src/index.js"
+
+To add all these files do this
+```bash
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/Shubhajeetgithub/YT-Backend01.git
+git push -u origin main
+```
