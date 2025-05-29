@@ -126,9 +126,9 @@ userSchema.methods.isPasswordCorrect = async function (password) {
 ```
 Go to .env file and add these lines
 ```bash
-ACCESS_TOKEN_SECRET=37fdcdc4904600c788da6d8dacbbc5ca4099122e5792ff32249427b8447dea05
+ACCESS_TOKEN_SECRET=37fdcdc904600c788da6d8dacbbc5ca4099122e5792ff32249427b8447dea05
 ACCESS_TOKEN_EXPIRY=1d
-REFRESH_TOKEN_SECRET=ef0b9eac657f8d7daf2a479455e666617e3270b89b170b42f0a1084363e082dc
+REFRESH_TOKEN_SECRET=ef0b9ac657f8d7daf2a479455e666617e3270b89b170b42f0a1084363e082dc
 REFRESH_TOKEN_EXPIRY=10d
 ```
 (To generate tokens you can use SHA256 generator. Just google and enter your key to convert it into SHA256 hash.)

@@ -6,9 +6,9 @@ npm i cloudinary multer
 ```
 Click on "View API Keys" in the website and save it in .env file, i.e., write these 
 ```bash
-CLOUDINARY_CLOUD_NAME=dykk7mrsx
-CLOUDINARY_API_KEY=389967474746161
-CLOUDINARY_API_SECRET=a7ExB0xk_QmS3qHfqHdnc9-dxas
+CLOUDINARY_CLOUD_NAME=dykk7mrx
+CLOUDINARY_API_KEY=38996747474611
+CLOUDINARY_API_SECRET=a7ExB0xk_QmS3HfqHdnc9-dxas
 ```
 
 Inside src directory create a folder named utils and inside it a file named cloudinary.js. Inside cloudinary.js write this:
