@@ -28,6 +28,7 @@ const uploadOnCloudinary = async (localFilePath) => {
         const response = await cloudinary.uploader.upload(localFilePath, {
             resource_type: "auto"
         })
+        fs.unlinkSync(localFilePath);
         return response;
     } catch (error) {
         fs.unlinkSync(localFilePath);
@@ -42,15 +43,15 @@ Now inside src create a directory named middlewares and inside it a file named m
 ```javascript
 import multer from "multer";
 const storage = multer.diskStorage({
-    destination: function(req, file, cb) {
-        cb(null, "../../public/temp")
-    },
-    filename: function(req, file, cb) {
-        cb(null, file.originalname)
-    }
-})
+  destination: function (req, file, cb) {
+    cb(null, "./public/temp");
+  },
+  filename: function (req, file, cb) {
+    cb(null, file.originalname);
+  },
+});
 
 export const upload = multer({
-    storage: storage
-})
+  storage: storage,
+});
 ```
