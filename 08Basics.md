@@ -249,3 +249,4 @@ to start the server. Now open `Postman` and enter the url http://localhost:8000/
 | `multer` | 📁 process.cwd() |
 | fs | 📁 process.cwd() |
 | cloudinary.uploader.upload | 📁 process.cwd() |
+| dotenv.config | 📁 process.cwd() |
